@@ -1,5 +1,4 @@
 "use client";
-
 import { SessionProvider, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Session } from "next-auth";
@@ -14,6 +13,7 @@ export const NextAuthProvider = ({
   type: "private" | "public";
   session: Session | null;
 }) => {
+  // if (!session)
   const router = useRouter();
   //   const session = useSession();
   if (type === "private") {
