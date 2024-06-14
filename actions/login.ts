@@ -28,7 +28,7 @@ export const login = async (
   }
 
   const { email, password, code } = validatedFields.data;
-
+  console.log({ email, password, code });
   const existingUser = await getUserByEmail(email);
 
   if (!existingUser || !existingUser.email || !existingUser.password) {
@@ -45,7 +45,7 @@ export const login = async (
       verificationToken.token
     );
 
-    return { success: "Confirmation email sent!" };
+    return { emailVerifing: "Confirmation email sent!" };
   }
 
   if (existingUser.isTwoFactorEnabled && existingUser.email) {
@@ -91,6 +91,10 @@ export const login = async (
 
       return { twoFactor: true };
     }
+  }
+
+  if (existingUser) {
+    return {success: "user is here"}
   }
 
   // try {

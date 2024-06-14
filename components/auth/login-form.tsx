@@ -56,7 +56,11 @@ export const LoginForm = () => {
           if (data?.error) {
             form.reset();
             setError(data.error);
-          } else {
+          } else if (data?.twoFactor) {
+            setShowTwoFactor(true);
+          } else if (data?.emailVerifing) {
+            setShowTwoFactor(true);
+          } else if (data?.success) {
             try {
               await signIn("credentials", {
                 email: values.email,
@@ -78,6 +82,9 @@ export const LoginForm = () => {
 
               // throw error;
             }
+            form.reset();
+            setSuccess(data.success);
+
           }
 
           if (data?.success) {

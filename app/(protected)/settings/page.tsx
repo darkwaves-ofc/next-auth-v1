@@ -45,10 +45,10 @@ const SettingsPage = () => {
     defaultValues: {
       password: undefined,
       newPassword: undefined,
-      name: user?.name || undefined,
-      email: user?.email || undefined,
-      role: user?.role || undefined,
-      isTwoFactorEnabled: user?.isTwoFactorEnabled || undefined,
+      name:  undefined,
+      email: undefined,
+      role:  undefined,
+      isTwoFactorEnabled: undefined,
     },
   });
 
