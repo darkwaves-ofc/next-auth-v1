@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "npm run gen && next start",
+    "build": "npm run gen && next build",
+    "start": "next start",
     "lint": "next lint",
     "gen": "prisma generate"
   },
