@@ -18,7 +18,7 @@ import { useCurrentUser } from "@/hooks/use-current-user";
 import { LogoutButton } from "@/components/auth/logout-button";
 
 export const UserButton = () => {
-  const user = useCurrentUser();
+  const { user } = useCurrentUser();
 
   return (
     <DropdownMenu>
