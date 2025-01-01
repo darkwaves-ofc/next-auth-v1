@@ -17,7 +17,13 @@ export const metadata: Metadata = {
     siteName: "Next Auth v1",
     images: [
       {
-        url: "/next-auth-banner.png", // Replace with the actual banner image URL
+        url: "/banner.png", // Replace with the actual banner image URL
+        width: 1200,
+        height: 630,
+        alt: "Next Auth v1 Banner",
+      },
+      {
+        url: "/banner2.png", // Replace with the actual banner image URL
         width: 1200,
         height: 630,
         alt: "Next Auth v1 Banner",
@@ -31,7 +37,7 @@ export const metadata: Metadata = {
     title: "Next Auth v1 – Authentication Service Example with Next.js",
     description:
       "Discover Next Auth v1, a modern Next.js authentication example featuring secure login and OAuth integration.",
-    images: ["/next-auth-banner.png"], // Replace with the actual image URL
+    images: ["/banner.png","/banner2.png"], // Replace with the actual image URL
   },
 };
 
