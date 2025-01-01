@@ -13,6 +13,13 @@ A robust authentication service example built using Next.js and NextAuth.js. Thi
 
 ---
 
+## Screenshots
+
+![Banner](https://github.com/darkwaves-ofc/next-auth-v1/blob/bfea427604170ba4bc6d64f05104a8e97c8dd896/public/banner.png)
+
+![Banner 2](https://github.com/darkwaves-ofc/next-auth-v1/blob/bfea427604170ba4bc6d64f05104a8e97c8dd896/public/banner2.png)
+
+---
 ## Installation
 
 1. **Clone the Repository**
@@ -53,18 +60,22 @@ A robust authentication service example built using Next.js and NextAuth.js. Thi
    DATABASE_URL=your_database_url
    ```
 
-   Github and Goggle OAuth
+   Github and Google OAuth
 
    #### Github OAuth
 
    Link - https://github.com/settings/developers
+
    Homepage URL - YOUR DOMAIN
+
    Authorization callback URL - YOUR DOMAIN/api/auth/callback/github
 
    #### Google OAuth
 
    Link https://console.cloud.google.com/apis/credentials
+
    Homepage URL - YOUR DOMAIN
+
    Authorization callback URL - YOUR DOMAIN/api/auth/callback/google
 
 4. **Run the Development Server**
@@ -95,6 +106,9 @@ next-auth-v1/
 ├── pages/            # Next.js pages
 ├── styles/           # Global CSS and styles
 ├── .env.example      # Environment variables example
+├── public/           # Public assets
+│   ├── banner.png    # Screenshot 1
+│   └── banner2.png   # Screenshot 2
 └── README.md         # Project documentation
 ```
 
@@ -142,3 +156,4 @@ Created by [Dark Waves](https://github.com/darkwaves-ofc).
 - **Documentation**: [NextAuth.js](https://next-auth.js.org/)
 
 Happy Coding!
+
